@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Quintessential&display=swap');
+
+@import "tailwindcss";
+
+*{
+   font-family: "Quintessential", serif;
+}
+
+@theme{
+  --color-primary: #2563EB;
+  --color-primary-dull: #1F58C8;
+  --color-light: #F1F5F9;
+  --color-borderColor: #c4c7d2;
+}
+
