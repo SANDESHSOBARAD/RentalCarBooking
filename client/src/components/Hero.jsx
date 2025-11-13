@@ -12,7 +12,7 @@ const Hero = () => {
         <h1 className='text-4xl md:text-5xl font-semibold'>Luxury Cars for Rent</h1>
         
         <form className='flex flex-col md:flex-row items-start md:items-center
-        justify-between p-6 rounded-lg md:roounded-full w-full max-w-80 md:max-w-200
+        justify-between p-6 rounded-full md:roounded-full w-full max-w-80 md:max-w-200
         bg-white shadow-[0px_8px_20px_rgba(0,0,0,0.3)]'>
             <div className='flex flex-col md:flex-row items-start md:items-center
             gap-10 min-md:ml-8'>
@@ -30,20 +30,19 @@ const Hero = () => {
                 {/* This part is for pickup date*/}
                 <div className='flex flex-col items-start gap-2'>
                     <label htmlFor="pickup-date">Pick-up date</label>
-                    <input type="date" id='pick-up date' min={new Date().toISOString().split('T')[0]} className='text-sm text-gray-500' />
+                    <input type="date" id='pickup-date' min={new Date().toISOString().split('T')[0]} className='text-sm text-gray-500' />
                 </div>
                 {/* This part is for Return date*/}
                 <div className='flex flex-col items-start gap-2'>
                     <label htmlFor="return-date">Return date</label>
-                    <input type="date" id='return date' className='text-sm text-gray-500' />
+                    <input type="date" id='return-date' className='text-sm text-gray-500' />
                 </div>
-
-                <button className='flex items-center justify-center gap-1 px-9'>
+            </div>
+            <button className='flex items-center justify-center gap-1 px-9 py-3 max-sm:mt-4
+                bg-primary hover:bg-primary-dull text-white rounded-full cursor-pointer'>
                     <img src={assets.search_icon} alt="search"  className='brightness-400'/>
                     Search
                 </button>
-
-            </div>
         </form>
 
         <img src={assets.main_car} alt="car" className='max-h-74'/>
