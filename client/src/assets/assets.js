@@ -138,7 +138,7 @@ export const dummyCarData = [
         "pricePerDay": 500,
         "location": "Denver",
         "description": "The BMW X5 is a mid-size luxury SUV produced by BMW. The X5 made its debut in 1999 as the first SUV ever produced by BMW.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T07:26:56.215Z",
     },
     {
@@ -155,7 +155,7 @@ export const dummyCarData = [
         "pricePerDay": 600,
         "location": "San Francisco",
         "description": "The Toyota Corolla is a mid-size luxury sedan produced by Toyota. The Corolla made its debut in 2008 as the first sedan ever produced by Toyota.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T08:33:57.993Z",
     },
     {
@@ -172,7 +172,7 @@ export const dummyCarData = [
         "pricePerDay": 250,
         "location": "Los Angeles",
         "description": "The Jeep Wrangler is a mid-size luxury SUV produced by Jeep. The Wrangler made its debut in 2003 as the first SUV ever produced by Jeep.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T08:34:39.592Z",
     },
     {
@@ -189,7 +189,7 @@ export const dummyCarData = [
         "pricePerDay": 180,
         "location": "Houston",
         "description": "This is a mid-size luxury sedan produced by Toyota. The Corolla made its debut in 2008 as the first sedan ever produced by Toyota.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-17T06:15:47.318Z",
     },
     {
@@ -206,7 +206,7 @@ export const dummyCarData = [
         "pricePerDay": 600,
         "location": "New York",
         "description": "The Audi R8 is a Coupe produced by Audi. The R8 made its debut in 2007 as the first Coupe ever produced by Audi.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T07:26:56.215Z",
     },
     {
@@ -223,7 +223,7 @@ export const dummyCarData = [
         "pricePerDay": 800,
         "location": "Los Angeles",
         "description": "The BMW I8 is a Coupe produced by BMW. The I8 made its debut in 2010 as the first Coupe-Roadster ever produced by BMW.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T07:26:56.215Z",
     },
     {
@@ -240,7 +240,7 @@ export const dummyCarData = [
         "pricePerDay": 1500,
         "location": "New York",
         "description": "The Bugatti Chiron is a sports coupe produced by Bugatti. The Chiron made its debut in 2020 as the fastest car ever produced.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T07:26:56.215Z",
     },
     {
@@ -257,7 +257,7 @@ export const dummyCarData = [
         "pricePerDay": 1000,
         "location": "Houston",
         "description": "The Laborghini Urus is a mid-size luxury SUV produced by Laborghini. The Urus made its debut in 2020 as the first SUV ever produced by Laborghini.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T07:26:56.215Z",
     },
     {
@@ -274,7 +274,7 @@ export const dummyCarData = [
         "pricePerDay": 1800,
         "location": "Chicago",
         "description": "The Laborghini fenomeno is a Coupe produced by Laborghini. The fenomeno made its debut in 2025 as the first Coupe to look so phenomenal.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T07:26:56.215Z",
     },
     {
@@ -291,7 +291,7 @@ export const dummyCarData = [
         "pricePerDay": 800,
         "location": "New York",
         "description": "The Mclaren 720S is a luxury coupe produced by Mclaren. The 720S made its debut in 2022 as the first coupe ever produced by Mclaren.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T07:26:56.215Z",
     },
     {
@@ -308,7 +308,7 @@ export const dummyCarData = [
         "pricePerDay": 3000,
         "location": "New York",
         "description": "The Ford Mustang is a Coupe produced by Ford. The Mustang 1989 made its debut in 1989 as the first Coupe ever produced by Ford.",
-        "isAvaliable": true,
+        "isAvailable": true,
         "createdAt": "2025-04-16T07:26:56.215Z",
     },
 ];
