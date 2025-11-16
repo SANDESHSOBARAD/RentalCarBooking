@@ -29,12 +29,12 @@ const Hero = () => {
                 </div>
                 {/* This part is for pickup date*/}
                 <div className='flex flex-col items-start gap-2'>
-                    <label htmlFor="pickup-date">Pick-up date</label>
+                    <label htmlFor="pickup-date">Pick-up Date</label>
                     <input type="date" id='pickup-date' min={new Date().toISOString().split('T')[0]} className='text-sm text-gray-500' />
                 </div>
                 {/* This part is for Return date*/}
                 <div className='flex flex-col items-start gap-2'>
-                    <label htmlFor="return-date">Return date</label>
+                    <label htmlFor="return-date">Return Date</label>
                     <input type="date" id='return-date' className='text-sm text-gray-500' />
                 </div>
             </div>
