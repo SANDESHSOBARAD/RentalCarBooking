@@ -22,6 +22,21 @@ const Footer = () => {
                 <div>
                     <img className="w-34 md:w-32" src={assets.logo} alt="logo" />
                     <p className="max-w-[410px] mt-6">Premium car rental service with a wide selection of luxury and everyday vehicles for all your driving needs.</p>
+
+                    <div className='flex items-center gap-3 mt-6'>
+                        <a href="#">
+                            <img src={assets.facebook_logo} alt="facebook" className='w-5 h-5'/>
+                        </a>
+                        <a href="#">
+                            <img src={assets.instagram_logo} alt="facebook" className='w-5 h-5'/>
+                        </a>
+                        <a href="#">
+                            <img src={assets.twitter_logo} alt="facebook" className='w-5 h-5'/>
+                        </a>
+                        <a href="#">
+                            <img src={assets.gmail_logo} alt="facebook" className='w-5 h-5'/>
+                        </a>
+                    </div>
                 </div>
                 <div className="flex flex-wrap justify-between w-full md:w-[45%] gap-5">
                     {linkSections.map((section, index) => (
@@ -46,9 +61,11 @@ const Footer = () => {
                     <p className='cursor-pointer hover:text-gray-800'>
                         Terms
                     </p>
+                    <p>|</p>
                     <p className='cursor-pointer hover:text-gray-800'>
                         Privacy
                     </p>
+                    <p>|</p>
                     <p className='cursor-pointer hover:text-gray-800'>
                         Cookies
                     </p>
