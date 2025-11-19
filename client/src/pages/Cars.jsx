@@ -9,12 +9,12 @@ const Cars = () => {
   return (
     <div>
 
-      <div className='flex flex-col items-center py-20 bg-light max-md:px-4'>
+      <div className='flex flex-col items-center py-20 bg-light max-md:px-4 mt-8'>
         
         <Title title = 'Available Cars'
          subTitle='Browse our selection of premium vehicles available for your next adventure'/>
 
-        <div class="flex items-center bg-white px-4 mt-6 max-w-140 w-full h-12 rounded-full shadow ">
+        <div className="flex items-center bg-white px-4 mt-6 max-w-140 w-full h-12 rounded-full shadow ">
           <img src={assets.search_icon} alt="search" className='w-4.5 h-4.5 mr-2'/>
           <input
           onChange={ (e) => setInput(e.target.value)} value={input}
