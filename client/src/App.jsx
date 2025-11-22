@@ -6,7 +6,7 @@ import CarDetails from './pages/CarDetails'
 import Cars from './pages/Cars'
 import MyBookings from './pages/MyBookings'
 import Footer from './components/Footer'
-import layout from './pages/owner/layout'
+import Laayout from './pages/owner/Laayout'
 import DashBoard from './pages/owner/DashBoard'
 import AddCar from './pages/owner/AddCar'
 import ManageBookings from './pages/owner/ManageBookings'
@@ -28,7 +28,7 @@ const App = () => {
       <Route path='/cars' element={<Cars/>} />
       <Route path='/my-bookings' element={<MyBookings/>} />  
 
-      <Route path='/owner' element= {<layout />}>
+      <Route path='/owner' element= {<Laayout />}>
         <Route index element = {<DashBoard/>}/>
         <Route path='add-car' element = {<AddCar/>}/>
         <Route path='manage-cars' element = {<ManageCars/>}/>
