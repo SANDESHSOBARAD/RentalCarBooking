@@ -359,7 +359,7 @@ export const dummyMyBookingsData = [
         "createdAt": "2025-06-10T09:44:25.410Z",
     },
     {
-        "_id": "6847fe790fb481c5cfd92d94",
+        "_id": "6847fe790fb481c5cfd92d95",
         "car": dummyCarData[6],
         "user": "6847f7cab3d8daecdb517095",
         "owner": "6847f7cab3d8daecdb517095",
@@ -373,12 +373,13 @@ export const dummyMyBookingsData = [
 
 export const dummyDashboardData = {
     "totalCars": 4,
-    "totalBookings": 2,
-    "pendingBookings": 0,
-    "completedBookings": 2,
+    "totalBookings": 3,
+    "pendingBookings": 2,
+    "completedBookings": 1,
     "recentBookings": [
         dummyMyBookingsData[0],
-        dummyMyBookingsData[1]
+        dummyMyBookingsData[1],
+        dummyMyBookingsData[2]
     ],
-    "monthlyRevenue": 840
+    "monthlyRevenue": 4000
 }
