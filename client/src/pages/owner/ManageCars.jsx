@@ -34,7 +34,7 @@ const ManageCars = () => {
           </thead>
           <tbody>
             {cars.map( (car, index) => (
-              <tr key={index} className='boder-t border-borderColor'>
+              <tr key={index} className='border-t border-borderColor'>
                 <td className='p-3 flex items-center gap-3'>
                   <img src={car.image} alt="" className='h-12 w-16 aspect-square rounded-md object-cover'/>
                   <div className='max-md:hidden'>

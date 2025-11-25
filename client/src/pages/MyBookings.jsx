@@ -16,13 +16,6 @@ const MyBookings = () => {
     fetchMyBookings();
   }, [])
 
-  const getTotalPrice = (booking) => {
-          const pickup = new Date(booking.pickupDate);
-          const returnDate = new Date(booking.returnDate);
-
-          const totalDays = (returnDate - pickup) / (1000 * 60 * 60 * 24);
-          return totalDays * booking.car.pricePerDay;
-  }
 
   
   return (
@@ -98,7 +91,7 @@ const MyBookings = () => {
             <div className='flex flex-col md:col-span-1 justify-between gap-6'>
               <div className='text-sm text-gray-500 text-right'>
                   <p>Total Price</p>
-                  <h1 className='text-primary text-2xl font-semibold'>{currency}{getTotalPrice(booking)}</h1>
+                  <h1 className='text-primary text-2xl font-semibold'>{currency}{booking.price}</h1>
                   <p>Booked on {booking.createdAt.split('T')[0]}</p>  
               </div>
                 
