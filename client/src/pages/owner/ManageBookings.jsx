@@ -29,42 +29,52 @@ const ManageBookings = () => {
               <td className='p-3 font-medium'>Car</td>
               <td className='p-3 font-medium'>Date range</td>
               <td className='p-3 font-medium'>Total</td>
-              <td className='p-3 font-medium'>Status</td>
+              <td className='p-3 font-medium'>Payment</td>
               <td className='p-3 font-medium'>Actions</td>
             </tr>
           </thead>
           <tbody>
             {bookings.map((booking, index) => (
-              <tr key={index} className='border-t border-borderColor'>
+              <tr key={index} className='border-t border-borderColor text-gray-500'>
                 <td className='p-3 flex items-center gap-3'>
                   <img src={booking.car.image} alt="" className='h-12 w-16 aspect-square rounded-md object-cover' />
-                  <div className='max-md:hidden'>
-                    <p>{booking.car.brand} {booking.car.model}</p>
-                  </div>
+                  <p className='font-medium max-md:hidden'>{booking.car.brand} {booking.car.model}</p>
                 </td>
 
                 <td className='p-3 max-md:hidden'>
                   {booking.pickupDate.split('T')[0]} to {booking.returnDate.split('T')[0]}
                 </td>
 
-                <td className='p-3 max-md:hidden'>
+                <td className='p-3'>
                   {currency}{booking.price}
                 </td>
 
                 <td className='p-3 max-md:hidden'>
-                  {booking.status}
+                  <span className='bg-gray-100 px-3 py-1 rounded-full'>
+                    offline
+                  </span>
                 </td>
 
-                <td className='p-3 max-md:hidden'>
-                  <select className='
-          px-3 py-1.5 mt-1 border border-borderColor
-          rounded-md outline-none'>
-            <option value="Sedan">Cancel</option>
-            <option value="Coupe">Confirm</option>
-            <option value="SUV">Reject</option>
-          </select>
+                <td className='p-3'>
+                  {booking.status === 'pending' ? (
+                    <select value={booking.status}
+                    className='px-2 py-1.5 mt-1 text-gray-500 border border-borderColor rounded-md outline-none'>
+                      <option value="pending">Pending</option>
+                      <option value="canceled">Cancelled</option>
+                      <option value="confirmed">Confirmed</option>
+                    </select>
+                  ) : (
+                    <span className={`px-3 py-1 rounded-full text-xs font-semibold
+                    ${booking.status === 'confirmed' ? 'bg-green-100 text-green-500' :
+                      'bg-red-100 text-red-500'
+                    }`}>
+                      {booking.status}
+                    </span>
+                  )}
+
                 </td>
 
+                
               </tr>
             ))}
           </tbody>

@@ -365,7 +365,7 @@ export const dummyMyBookingsData = [
         "owner": "6847f7cab3d8daecdb517095",
         "pickupDate": "2025-09-01T00:00:00.000Z",
         "returnDate": "2025-10-01T00:00:00.000Z",
-        "status": "confirmed",
+        "status": "pending",
         "price": 1800,
         "createdAt": "2025-06-10T09:44:25.410Z",
     }
