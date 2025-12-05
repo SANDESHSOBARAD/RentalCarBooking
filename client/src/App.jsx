@@ -11,6 +11,7 @@ import DashBoard from './pages/owner/DashBoard'
 import AddCar from './pages/owner/AddCar'
 import ManageBookings from './pages/owner/ManageBookings'
 import ManageCars from './pages/owner/ManageCars'
+import Login from './components/Login'
 
 const App = () => {
 
@@ -20,7 +21,10 @@ const App = () => {
 
   return (
     <>
-      {!isOwnerPath && <Navbar setShowLogin={setShowLogin}/>}
+    {showLogin && <Login setShowLogin = {setShowLogin}/>}
+    
+    {!isOwnerPath && <Navbar setShowLogin={setShowLogin}/>}
+
 
     <Routes>
       <Route path='/' element={<Home/>} />
